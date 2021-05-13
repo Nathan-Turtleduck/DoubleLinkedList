@@ -1,0 +1,81 @@
+****************
+* Double-linked List
+* CS221
+* 4/13/2020
+* Nathan Maroko
+**************** 
+
+OVERVIEW:
+
+Double-linked node implementation of IndexedUnsortedList.
+An Iterator with working remove() method is implemented and
+ListIterator is supported.
+
+INCLUDED FILES:
+
+ * IndexedUnsortedList.java - interface file
+ * DoubleNode.java - source file
+ * IUDoubleLinkedList.java - source file
+ * ListTester.java - source file
+ * README - this file
+
+
+COMPILING AND RUNNING:
+
+ From the directory containing all source files, compile the
+ driver class (and all dependencies) with the command:
+ $ javac ListTester.java
+
+ Run the compiled class file with the command:
+ $ java ListTester
+
+ The program will run over 2000 tests for the 
+ IUDoubleLinkedList class. The data structure can then
+ be implemented to whatever you want.
+
+
+PROGRAM DESIGN AND IMPORTANT CONCEPTS:
+
+The IUDoubleLinkedList data structure uses a DoubleNode as its
+underlying data type. It connects additional nodes that are 
+stored in each DoubleNode. It connects each node to what is in
+front of them and behind them. Various getters and setters are used
+to get and set these nodes and their elements.
+
+The IUDoubleLinkedList data structure that implements the IndexedUnsortedList interface
+to give definition to an UnsortedList. Everything is implemented as they should.
+My only issue with this project was the iterator and the list iterator. We did not
+learn how to implement methods in the listIterator class and we didnt learn how to 
+implement the remove method in the iterator class. This made this part rather difficult.
+
+The ListTester class uses various methods that I don't really understand to test the
+IUDoubleLinkedList class. It includes tests for empty, single, two, and three element
+lists. It also includes list iterator tests, iterator tests, and concurrency tests.
+Around 21 scenarios have been tested and have a 96% success rate. This class isn't
+necessary for implementation of the IUDoubleLinkedList class but is important in the
+testing phase of this class.
+
+
+TESTING:
+
+ This program was tested using the ListTesterTest class that was
+ filled out by me over the course of the past month. Every scenario and test
+ is written out correctly.
+
+
+DISCUSSION:
+ 
+Since every homework assignment built off of each other, building up to this point,
+I didn't have a crazy hard time with this project. Overall, the implementation
+of the Double Linked List wasn't too difficult and I found that it was rather fun.
+Debugging this program wasn't too difficult but I still spent a large amount of 
+time on it. If I had to pick the hardest part of this project I would say that
+implementing the List Iterator was the hardest part. We never went over this in class
+so I had literally no direction on this section of the project. I still don't understand
+why my concurrency tests aren't passing but I guess I won't ever figure that out. That
+was definitely the most frustrating part of the project. Despite that, I still learned
+a great deal from this project and fully understand how useful a double linked list
+can be as a data structure.
+ 
+
+----------------------------------------------------------------------------
